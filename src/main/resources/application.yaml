@@ -1,4 +1,15 @@
-
 spring:
-  url: jbdc:postgresql://localhost:5432
-
+  datasource:
+    url: jdbc:postgresql://localhost:5432/machines_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
