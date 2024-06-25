@@ -1,0 +1,4 @@
+
+spring:
+  url: jbdc:postgresql://localhost:5432
+
